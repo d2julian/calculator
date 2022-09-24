@@ -1,0 +1,51 @@
+.App {
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 96px);
+  grid-template-rows: minmax(112px, auto) repeat(5, 96px);
+  justify-content: center;
+  background-color: #ccc;
+  margin-top: 24px;
+}
+
+.two-blocks {
+  grid-column: span 2;
+}
+
+.screen {
+  grid-column: 1/-1;
+  color: white;
+  background-color: black;
+  border: 2px solid black;
+  max-height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.previous {
+  font-size: 24px;
+  color: rgb(255, 255, 255, 0.75);
+}
+.current {
+  font-size: 48px;
+}
+
+button {
+  cursor: pointer;
+  font-size: 24px;
+  border: 1px solid black;
+}
+
+button:hover {
+  background-color: lightgrey;
+}
+button:focus {
+  background-color: lightgrey;
+}
